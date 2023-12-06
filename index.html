@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="black" />
-    <title>pwa - cam</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" href="/images/camera-256.png" />
-</head>
+<html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Insta do ali</title>
+      <link rel="stylesheet" href="/style.css">
+      <link rel="apple-touch-icon" href="img/cav.512.png">
+      <link rel="manifest" href="manifest.json">
+      <link rel="icon" href="favicon.png">
+      <meta name="theme-color" content="white"/>
+    </head>
 <body>
-    <div class="tp1">
-        <video class="videoft" autoplay></video>
-        <button class="btn">Tirar foto</button>
-    
+  <center>
+<div class="container">
+    <div class="row">
+      <h1>Instagram</h1>
+      <div class="input-group">
+        <input type="text" id="nome" placeholder="Nome" required/>
+      </div>
+<div>
+    <main id="camera">
+      <!--Camera view (visualização)-->
+      <video id="camera--view" autoplay playsinline></video>
+      <div>
+        <h2>Resultados</h2>
+ <!--Camera output-->
+ <img src="//:0" alt="" id="camera--output">
+ <!--Camera sensor (lente)-->
+ <canvas id="camera--sensor"></canvas>
+<!--Camera botão para tirar foto--><br/>
+      </div>
+   <div class="bt-container">
+      <button id="camera--trigger">Cadastrar</button>
+   </div>
+    </main>
+
+    </div>
+            <button id="btnCarregar">Exibir</button>
     </div>
 
-    <canvas class="imgbtn"></canvas>
-    <script src="/js/main.js "></script>
+
+
+
+<div id="resultados"></div>
+<script src="js/main.js" type="module"></script>
+</center>
 </body>
 </html>

@@ -40,7 +40,7 @@ new StaleWhileRevalidate({
 
 // Configurando offline fallbeack
 offlineFallback({
-    pageFallback: '/offline.html',
+    pageFallback: '/offiline.html',
 });
 
 
